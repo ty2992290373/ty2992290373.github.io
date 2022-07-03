@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/logo.png" rel="icon">
+    <link href="assets/logo.png" rel="apple-touch-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>秋橒Official的主页</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" />
+                
+            </div>
+            <div class="toggle"></div>
+        </header>
 
-You can use the [editor on GitHub](https://github.com/ty2992290373/ty2992290373.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+        <video src="assets/video/3.mp4" muted loop autoplay></video>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        <div class="overlay"></div>
 
-### Markdown
+        <div class="text">
+            <h2>欢迎来到</h2>
+            <h3>秋橒Official的主页</h3>
+            <p>Thank you for visiting me!</p>
+            <a href="整理/index.html">欢迎 (Play）</a>
+        </div>
+        <ul class="social">
+            <li><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2261783937&website=www.oicqzone.com"><img src="assets/qq.png" alt=""></a></li>
+            <li><a href="https://www.getrevue.co/profile/yinuocn?via=twitter-profile"><img src="assets/getrevue.png" alt=""></a></li>
+            <li><a href="https://www.twitch.tv/ty2992290373"><img src="assets/Twitch.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCvNT205wybSdm5NysezO66g"><img src="assets/youtube.png" alt=""></a></li>
+            <li><a href="https://space.bilibili.com/198464178"><img src="assets/bilibili.png" alt=""></a></li>
+            <li><a href="https://twitter.com/yinuoCN"><img src="assets/twitter.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100039939615605"><img src="assets/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/ty2992290373/"><img src="assets/instagram.png" alt=""></a></li>
+            <li><a href="https://www.tiktok.com/@fan_xin?is_from_webapp=1&sender_device=pc"><img src="assets/tiktok.png" alt=""></a></li>
+            <li><a href="https://music.163.com/#/user?id=476974238"><img src="assets/163music.png" alt=""></a></li>
+            <li><a href="https://www.kuaishou.com/profile/3xcxkbmuvu5h57g"><img src="assets/kuaishou.png" alt=""></a></li>
+            <li><a href="https://weibo.com/u/6109526099?tabtype=feed"><img src="assets/weibo.png" alt=""></a></li>
+            <li><a href="https://t.me/b25aba45"><img src="assets/telegram.png" alt=""></a></li>
+            <li><a href="https://discord.gg/stDPPZJqfB"><img src="assets/discord.png" alt=""></a></li>
+            <li><a href="https://www.zhihu.com/people/jiao-ao-de-yi-nuo"><img src="assets/zhihu.png" alt=""></a></li>
+            <li><a href="https://steamcommunity.com/id/ty2992290373/"><img src="assets/steam.png" alt=""></a></li>
+        </ul>
+    </section>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <div class="menu">
+        <ul>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">我的梦想</a></li>
+            <li><a href="">我的日记</a></li>
+            <li><a href="">图片墙</a></li>
+        </ul>
+    </div>
 
-```markdown
-Syntax highlighted code block
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ty2992290373/ty2992290373.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
