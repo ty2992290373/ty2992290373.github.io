@@ -1,43 +1,75 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta标签 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <meta name="description" content="秋玥橒的个人网站，欢迎你的来访！">
+    <Meta name="Keywords" Content="博客，互联网，电报，二次元">
+    <Meta name="Author" Content="秋玥橒，ty2992290373@gmail.com">
+    <Meta name="Copyright" Content="本页版权归秋玥橒所有">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+    <title>秋橒Official的主页</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <div class="logo">
+                
+            </div>
+            <div class="toggle"></div>
+        </header>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+        <video src="assets/video/2.mp4" muted loop autoplay></video>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+        <div class="overlay"></div>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+        <div class="text">
+            <h2>欢迎来到</h2>
+            <h3>秋橒Official的主页</h3>
+            <p>Thank you for visiting me!</p>
+            <a href="整理/index.html">欢迎 (Play）</a>
+        </div>
+        <ul class="social">
+            <li><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2992290373&website=www.oicqzone.com"><img src="assets/qq.png" alt=""></a></li>
+            <li><a href="https://www.getrevue.co/profile/yinuocn?via=twitter-profile"><img src="assets/getrevue.png" alt=""></a></li>
+            <li><a href="https://www.twitch.tv/ty2992290373"><img src="assets/Twitch.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCvNT205wybSdm5NysezO66g"><img src="assets/youtube.png" alt=""></a></li>
+            <li><a href="https://space.bilibili.com/198464178"><img src="assets/bilibili.png" alt=""></a></li>
+            <li><a href="https://twitter.com/yinuoCN"><img src="assets/twitter.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100039939615605"><img src="assets/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/ty2992290373/"><img src="assets/instagram.png" alt=""></a></li>
+            <li><a href="https://www.tiktok.com/@fan_xin?is_from_webapp=1&sender_device=pc"><img src="assets/tiktok.png" alt=""></a></li>
+            <li><a href="https://music.163.com/#/user?id=476974238"><img src="assets/163music.png" alt=""></a></li>
+            <li><a href="https://www.kuaishou.com/profile/3xcxkbmuvu5h57g"><img src="assets/kuaishou.png" alt=""></a></li>
+            <li><a href="https://weibo.com/u/6109526099?tabtype=feed"><img src="assets/weibo.png" alt=""></a></li>
+            <li><a href="https://t.me/b25aba45"><img src="assets/telegram.png" alt=""></a></li>
+            <li><a href="https://discord.gg/stDPPZJqfB"><img src="assets/discord.png" alt=""></a></li>
+            <li><a href="https://www.zhihu.com/people/jiao-ao-de-yi-nuo"><img src="assets/zhihu.png" alt=""></a></li>
+            <li><a href="https://steamcommunity.com/id/ty2992290373/"><img src="assets/steam.png" alt=""></a></li>
+        </ul>
+    </section>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+    <div class="menu">
+        <ul>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">我的梦想</a></li>
+            <li><a href="">我的日记</a></li>
+            <li><a href="">图片墙</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
